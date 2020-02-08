@@ -28,6 +28,10 @@ class ElementImpl<T extends interop.Element> extends NodeImpl<T>
 
   @override
   String get tagName => jsObject.tagName;
+  @override
+  String get className => jsObject.className;
+  @override
+  set className(String value) => jsObject.className = value;
 
   @override
   String get id => jsObject.id;

@@ -38,6 +38,9 @@ abstract class Element implements Node, ParentNode, ChildNode, Slotable {
   /// The name of the tag for the given [Element].
   String get tagName;
 
+  String get className;
+  set className(String value);
+
   /// The identifier of the [Element].
   String get id;
   set id(String value);

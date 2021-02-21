@@ -17,4 +17,6 @@ abstract class Node implements EventTarget {
 
   /// Returns a duplicate of the node on which this method was called.
   U cloneNode<U extends Node>();
+
+  Node get parentNode;
 }

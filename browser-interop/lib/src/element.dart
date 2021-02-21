@@ -31,6 +31,9 @@ class Element extends Node with ParentNode, ChildNode, Slotable {
   /// The name of the tag for the given [Element].
   external String get tagName;
 
+  external String get className;
+  external set className(String value);
+
   /// The identifier of the [Element].
   external String get id;
   external set id(String value);

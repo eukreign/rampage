@@ -21,6 +21,9 @@ class NodeImpl<T extends interop.Node> extends EventTargetImpl<T>
   @override
   U cloneNode<U extends Node>() =>
       nodeFromJsObject<U>(jsObject.cloneNode(true));
+
+  @override
+  Node get parentNode => nodeFromJsObject(jsObject.parentNode);
 }
 
 /// Creates an instance of [T] from the [jsObject].
